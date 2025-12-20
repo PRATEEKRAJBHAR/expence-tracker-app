@@ -23,16 +23,3 @@ This app allows users to track their daily expenses, manage records, and persist
 - JavaScript (ES6)
 - Browser LocalStorage
 
----
-
-## 📸 Screenshots
-
-*(Add screenshots here if available)*
-
----
-
-## 📦 How to Run the Project
-
-1. Clone the repository
-   ```bash
-   git clone https://github.com/PRATEEKRAJBHAR/your-repo-name.git
