@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="sign_up.css">
+   
+</head>
+<body>
+    <h1 id="expense-tracker">Expense Tracker</h1>
+    <!-- <div class="container1">
+     
+        <a href="sign_up.html" class="btns1">Home Page</a>
+        <a href="filter.html"class="btns">Dashboard</a>
+        <a href="expense_tracker.html"class="btns">Expense Name Master</a>
+        <a href="first_page.html"class="btns">Add Expense</a>
+       </div> -->
+<div class="container">
+    <div class="login">
+        <div class="tag">
+            <p>Welcome To Expense Tracker App !</p>
+            <h2>Sign-Up </h2>
+          
+        </div>
+          <form action="">
+            <div class="email">
+                <h5 class="property-names">Email</h5>
+                <input type="email" id="email" placeholder="Enter your email" oninput="validatemail(this)" required>
+            </div>
+            <div id="validation-email">
+                <p>please enter valid email</p>
+            </div>
+            <div id="required-email">
+                <p>email is required</p>
+            </div>
+            <div class="user-name">
+                <h5 class="property-names">User name</h5>
+                <input type="text" id="user-name" placeholder="Enter your user name" oninput="validatenames(this)" required>
+            </div>
+            <div id="validation-names">
+                <p>please enter valid names</p>
+            </div>
+            <div id="required-name">
+                <p>user name is required</p>
+            </div>
+            <div class="password">
+                <h5 class="property-names">Password </h5>
+                <input type="password" id="password" placeholder="Enter your password" oninput="validatepasswords(this)" 
+                required >
+                <!-- <span id="toggle-password" style="cursor: pointer;">👁️</span> -->
+                <!-- <i class="fa-solid fa-eye"></i>
+                <i class="fa-solid fa-eye-slash"></i> -->
+            </div>
+            <div id="validation-password">
+                <p>password is not less than 6 and not greater than 12</p>
+            </div>
+            <div id="required-password">
+                <p>password is required</p>
+            </div>
+            <div class="conf-password">
+                <h5 class="property-names">Confirm Password</h5>
+                <input type="password" id="conf-password" placeholder="Confirm your password" oninput="validaterepasswords(this)"   required>
+               
+            </div>
+            <div id="validation-re-password">
+                <p>passwords is miss-match</p>
+            </div>
+            <div id="required-re-pass">
+                <p>re-password is required</p>
+            </div>
+            <div class="register">
+                <button id="register" type="submit" onclick="btn()">Register</button>
+            </div>
+            <div class="already-acc">
+                <label>Already have an Account?</label>
+                <h4><a href="login.html">login </a></h4>
+            </div>
+          </form>
+    </div>
+</div>
+    <script src="sign_up.js"></script>
+    <!-- <script src="login.js"></script> -->
+</body>
+</html>

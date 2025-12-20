@@ -1,0 +1,99 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Display</title>
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>store data in local storage</h1>
+   <input type="text" id="learning" r>
+<button onclick="btn()">click me</button>
+
+<div id="display-data"></div>
+<div class="icon"></div>
+    <script>
+function btn(){
+   let input=document.getElementById("learning");
+   let value=input.value.trim();
+   if(value==""){
+    alert("please fill input fields")
+   }
+let obj={
+    input:input.value,
+}
+let shyam=JSON.parse(localStorage.getItem("ram"))||[];
+shyam.push(obj)
+localStorage.setItem("ram",JSON.stringify(shyam))
+input.value="";
+display();
+}
+
+function display(){
+    let display_data=document.getElementById("display-data");
+    display_data.innerHTML="";
+    let data=JSON.parse(localStorage.getItem("ram"))||[];
+    // console.log(data,"dfs");
+    data.forEach((element,index)=>{
+        // console.log(element,"shree ram");
+        let div=document.createElement("div")
+        div.textContent=`${index+1}. ${element.input}`
+        display_data.appendChild(div);
+        // delete icon
+
+        const iconContainer = document.createElement("span");
+        const deleteIcon = document.createElement("i");
+        deleteIcon.className = "fa-solid fa-trash-can";
+        deleteIcon.style.marginRight = "10px";
+        deleteIcon.style.marginLeft = "10px";
+        deleteIcon.style.cursor = "pointer";
+        deleteIcon.style.color = "red"; // Optional: makes it visible
+deleteIcon.addEventListener("click",()=>{
+    data.splice(index,1);
+    localStorage.setItem("ram",JSON.stringify(data));
+    display();
+    alert("task deleted successfully")
+    
+});
+
+// edits buttons
+
+const edits=document.createElement("i");
+edits.className="fa-solid fa-pen-to-square";
+edits.style.cursor="pointer";
+edits.style.color="red";
+
+
+edits.addEventListener("click",()=>{
+    let updatetask=prompt("here change your task",element.input);
+    if(updatetask){
+        data[index].input=updatetask.trim();
+        localStorage.setItem("ram",JSON.stringify(data));
+        display();
+        alert("successfull deleted")
+    }else{
+        alert("somthing went wrong")
+    }
+})
+
+
+iconContainer.appendChild(deleteIcon);
+iconContainer.appendChild(edits);
+div.appendChild(iconContainer);
+    })
+
+
+}
+window.onload=display;
+// display();
+    </script>
+</body>
+</html>
+
+
+ 

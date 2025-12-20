@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+     <h1 id="expense-tracker">Expense Tracker</h1>
+    <div class="container">
+        <div class="sign-in">
+            <div class="tag">
+                <h2>Sign-In </h2>
+              
+            </div>
+            <div class="user-name">
+                <h5 class="property-names">User name</h5>
+                <input type="text" id="user-name" placeholder="Enter your user name" oninput="validatenames(this)" required>
+            </div>
+            <!-- <div id="validation-names">
+                <p>please enter valid user name</p>
+            </div> -->
+            <!-- <div id="required-name">
+                <p>user name is required</p>
+            </div> -->
+            <div class="password">
+                <h5 class="property-names">Password </h5>
+                <input type="password" id="password" placeholder="Enter your password" oninput="validatepasswords(this)" 
+                required >
+                <!-- <span id="toggle-password" style="cursor: pointer;">👁️</span> -->
+                <!-- <i class="fa-solid fa-eye"></i>
+                <i class="fa-solid fa-eye-slash"></i> -->
+            </div>
+            <!-- <div id="validation-password">
+                <p>password is not match</p>
+            </div> -->
+            <!-- <div id="required-password">
+                <p>password is required</p>
+            </div> -->
+            <!-- <input type="checkbox"> -->
+            <!-- <label>Remember me</label> -->
+            <div id="forget-pass">
+                <!-- <a href="#">Forget Password</a> -->
+            </div>
+            <div class="register">
+                <button id="register" type="submit" onclick="login()">Login</button>
+            </div>
+            <div class="already-acc">
+                <label>Don't have an Account?</label>
+               <h4> <a href="sign_up.html" id="create-id">Register </a></h4>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<style>
+  .fa-user {
+            height: 30px;
+width: 30px;
+font-size: 25px;
+color: #F5F7FA;
+  }
+#logos{
+    border: 1px solid#444; 
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    background-color: #bdbdbd;
+    ;
+    margin-left: 20px;
+    /* margin-top: 15px; */
+    cursor: pointer;
+    transition-duration: 1s;
+   
+}
+#logos:hover{
+    background-color: #444; ;
+}  
+.logo{
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fa-pen-to-square {
+     font-size: 25px;
+     padding: 15px;
+   
+}
+.fa-key {
+     font-size: 25px;
+     padding: 15px;
+}
+.fa-right-from-bracket{
+    font-size: 25px;
+    padding: 15px;
+}
+
+
+
+
+.container {
+    width: 300px; /* Adjust width as needed */
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin: 50px auto; /* Center the container */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* .logo h2 {
+    font-size: 18px;
+    margin-top: 10px;
+} */
+
+/* #logos {
+    height: 40px;
+    width: 40px;
+    font-size: 18px;
+} */
+
+/* .changes {
+    margin-top: 20px;
+} */
+
+.changes div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.changes div:hover {
+    background-color: #e0e0e0;
+}
+
+i {
+    font-size: 20px;
+}
+
+</style>
+<body>
+    <div class="container">
+        <div class="logo">
+            <button id="logos"><i class="fa-solid fa-user"></i></button>
+             <h2 id="usernames">Shree Ram</h2>
+        </div>
+        <hr>
+        <div class="changes">
+           <div class="a">
+          <a href="admin_edit.html" id="editProfileLink" ><i class="fa-regular fa-pen-to-square"></i></a>
+            <label for="Edit Profile">Edit Profile</label>
+           </div>
+          <div class="b">
+            <a href="admin_change_pass.html" id="changeprofilepassword"><i class="fa-solid fa-key"></i></a>
+            <label for="Edit Profile">change Password</label>
+          </div>
+           <div class="c">
+            <a href="login.html" id="user-logout"> <i class="fa-solid fa-right-from-bracket"></i></a>
+            <label for="Edit Profile">Logout</label>
+           </div>
+        </div>
+    </div>
+</body>
+<script src="admin.js" defer></script>
+<script src="admin_logout.js" defer></script>
+
+
+</html>

@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 10px 10px 0 10px;
+    max-width: 100%;
+    overflow-x: hidden;
+    /* border: 8px solid white; */
+    font-family: 'Poppins', sans-serif
+}
+
+.container{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+   
+}
+.login{
+   border: 1px solid rgb(98, 96, 96);
+   
+    padding-left: 30px;
+    padding-right: 50px;
+    padding-bottom: 70px;
+    border-radius: 10px;
+}
+
+#email{
+    border: 1px solid rgb(98, 96, 96);
+    border-radius: 10px ;
+    height: 40px;
+    width: 300px;
+    padding-left: 20px;
+    
+
+}
+.property-names{
+    /* border: 1px solid cyan; */
+  position: relative;
+  top: 15px; 
+}
+#user-name{
+    border: 1px solid rgb(98, 96, 96);
+    border-radius: 10px ;
+    height: 40px;
+    width: 300px;
+    padding-left: 20px;
+    
+
+}
+/* .user-name{
+border: 1px solid black;
+position: relative;
+bottom: 20px;
+} */
+
+#password{
+    border: 1px solid rgb(98, 96, 96);
+    border-radius: 10px ;
+    height: 40px;
+    width: 300px;
+    padding-left: 20px;
+    
+
+}
+
+#conf-password{
+    border: 1px solid rgb(98, 96, 96);
+    border-radius: 10px ;
+    height: 40px;
+    width: 300px;
+    padding-left: 20px;
+    
+
+}
+
+#register{
+    border: 1px solid rgb(98, 96, 96);
+    background-color: #55d6aa;
+    color: black;
+    border-radius: 10px ;
+    height: 40px;
+    width: 325px;
+    position: relative;
+    top: 30px;
+    cursor: pointer;
+    transition-duration: 1s;
+    font-weight: bold;
+}
+
+#register:hover{
+    color: black;
+}
+
+.already-acc{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+}
+
+.already-acc label{
+/* border: 1px solid blue; */
+color:rgb(98, 96, 96) ;
+}
+.already-acc a{
+    /* border: 1px solid blue; */
+    text-decoration: none;
+    color: black;
+    position: relative;
+    left: 5px;
+    bottom: 22px;
+    }
+
+
+.fa-eye{
+    position: relative;
+    right: 60px; 
+}
+
+.fa-eye-slash{
+    position: relative;
+    right: 60px; 
+}
+#expense-tracker{
+    /* border: 1px solid red; */
+display: flex;
+justify-content: center;
+
+}

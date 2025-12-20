@@ -1,0 +1,388 @@
+#heading{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+}
+
+label{
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    margin-left: 70px;
+}
+#expense-form form{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#expense-quantity{
+    /* padding-left: 10px; Andar ka text 10px right hoga */
+    height: 25px;
+    width: 100px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    /* margin-right: 500px; */
+}
+#expense-rate{
+    padding-left: 10px; 
+    height: 25px;
+    width: 100px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    /* margin-right: 500px; */
+}
+
+#expense-name{
+    padding-left: 10px; /* Andar ka text 10px right hoga */
+    height: 25px;
+    width: 100px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    /* margin-top: 10px; */
+    /* margin-right: 500px; */
+}
+
+#expense-amount{
+    padding-left: 10px; /* Andar ka text 10px right hoga */
+    height: 25px;
+    width: 100px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    /* margin-right: 500px; */
+}
+
+#expense-date{
+    padding-left: 10px; /* Andar ka text 10px right hoga */
+    height: 25px;
+    width: 100px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    /* margin-right: 500px; */
+}
+
+#btn{
+    padding-left: 10px; /* Andar ka text 10px right hoga */
+    height: 25px;
+    width: 100px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: 1s;
+    /* margin-right: 500px; */
+}
+#btn:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+#save-btn{
+    padding-left: 10px; /* Andar ka text 10px right hoga */
+    height: 25px;
+    width: 120px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: 1s;
+    /* margin-right: 500px; */
+}
+#save-btn:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+
+.container { 
+    border: 1px solid blueviolet;
+    margin-top: 50px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #ccc;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 10px;
+    word-wrap: break-word;   /* Ensures words wrap */
+    white-space: normal;     /* Allows text to wrap */
+    overflow-wrap: break-word; /* Helps break long words */
+    max-width: 200px; /* Adjust as needed to control cell width */
+}
+
+th {
+    background-color: #7ae5bc;
+}
+
+#total-amount {
+    display: flex;
+    justify-content: end;
+}
+
+
+
+
+
+.btns1 {
+   
+    text-align: center;
+ 
+    font-size: 14px;
+    border: 1px solid #000;
+    border-radius: 10px;
+font-weight: bold;
+    font-size: 12px;
+    padding: 8px 16px;
+    border-radius: 10px;       
+    
+    background-color: #edecec;
+
+}
+
+.container1 {
+width: 80%;
+margin: 0 auto;
+/* border: 1px solid red; */
+}
+
+header {
+background: #55d6aa;
+margin-bottom: 30px;
+/* border: 1px solid red; */
+
+}
+
+header::after {
+content: '';
+display: table;
+clear: both;
+}
+
+#heading {
+float: left;
+
+}
+
+nav {
+float: right;
+position: relative;
+left: 100px;
+/* border: 1px solid red; */
+}
+
+nav ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+nav li {
+display: inline-block;
+margin-left: 20px;
+padding-top: 23px;
+
+position: relative;
+}
+
+nav a {
+color: #444;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 14px;
+}
+
+nav a:hover {
+color: #000;
+}
+
+nav a::before {
+content: '';
+display: block;
+height: 5px;
+background-color: #444;
+
+position: absolute;
+top: 0;
+width: 0%;
+
+transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+width: 100%;
+}
+#heading{
+    /* border: 1px solid red; */
+    position: relative;
+    right:100px ;
+    color: #444; 
+  }
+  #x{
+    /* border: 1px solid red; */
+    position: relative;
+    bottom: 38px;
+    left: 175px;
+    font-weight: bold;
+  }
+  #y{
+    /* border: 1px solid red; */
+    position: relative;
+    bottom: 38px;
+    left: 135px;
+    font-weight: bold;
+  }
+  #z{
+    /* border: 1px solid red; */
+    position: relative;
+    bottom: 38px;
+    left: 110px;
+    font-weight: bold;
+  }
+  #a{
+    /* border: 1px solid red; */
+    position: relative;
+    bottom: 38px;
+    left: 110px;
+    font-weight: bold;
+  }
+  .fa-user {
+    height: 30px;
+width: 30px;
+font-size: 25px;
+color: #F5F7FA;
+}
+#logos{
+border: 1px solid#444; 
+height: 45px;
+width: 45px;
+border-radius: 50px;
+background-color: #bdbdbd;
+;
+margin-left: 20px;
+margin-top: 10px;
+cursor: pointer;
+transition-duration: 1s;
+}
+#logos:hover{
+background-color: #444; ;
+}
+
+
+
+
+
+
+
+
+
+/* .fa-user {
+    height: 30px;
+width: 30px;
+font-size: 25px;
+color: #F5F7FA;
+} */
+#logos1{
+border: 1px solid#444; 
+height: 45px;
+width: 45px;
+border-radius: 50px;
+background-color: #bdbdbd;
+;
+margin-left: 20px;
+/* margin-top: 15px; */
+cursor: pointer;
+transition-duration: 1s;
+
+}
+#logos1:hover{
+background-color: #444; ;
+}  
+.logo{
+/* border: 1px solid blue; */
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+/* .fa-pen-to-square {
+font-size: 25px;
+padding: 15px;
+color: black;
+
+}
+.fa-key {
+font-size: 25px;
+padding: 15px;
+color: black;
+
+}
+.fa-right-from-bracket{
+font-size: 25px;
+padding: 15px;
+color: black;
+
+} */
+
+
+
+
+.container2 {
+
+position: absolute; /* Ensure it does not push content down */
+top: 60px; /* Adjust as needed */
+right: 20px; /* Adjust to align properly */
+width: 250px;
+background-color: #f8f9fa;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+z-index: 1000; /* Ensures it appears above other content */
+}
+
+/* .logo h2 {
+font-size: 18px;
+margin-top: 10px;
+} */
+
+/* #logos {
+height: 40px;
+width: 40px;
+font-size: 18px;
+} */
+
+/* .changes {
+margin-top: 20px;
+} */
+
+.changes div {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 8px;
+cursor: pointer;
+border-radius: 5px;
+transition: 0.3s;
+}
+
+.changes div:hover {
+background-color: #e0e0e0;
+}
+
+i {
+font-size: 20px;
+}
+
+.a  {
+    /* border: 1px solid blue; */
+    width: 230px;
+}
+
+a  {
+    /* border: 1px solid blue; */
+    text-decoration: none;
+}
+
+i {
+    font-size: 20px;
+}
+label{
+    /* border:  1px solid blue; */
+    margin-bottom: 20px;
+}

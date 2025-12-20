@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<style>
+  .fa-user {
+            height: 30px;
+width: 30px;
+font-size: 25px;
+color: #F5F7FA;
+  }
+#logos{
+    border: 1px solid#444; 
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    background-color: #bdbdbd;
+    ;
+    margin-left: 20px;
+    /* margin-top: 15px; */
+    cursor: pointer;
+    transition-duration: 1s;
+   
+}
+#logos:hover{
+    background-color: #444; ;
+}  
+.logo{
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fa-pen-to-square {
+     font-size: 25px;
+     padding: 15px;
+   
+}
+.fa-key {
+     font-size: 25px;
+     padding: 15px;
+}
+.fa-right-from-bracket{
+    font-size: 25px;
+    padding: 15px;
+}
+
+
+
+
+.container {
+    width: 300px; /* Adjust width as needed */
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin: 50px auto; /* Center the container */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* .logo h2 {
+    font-size: 18px;
+    margin-top: 10px;
+} */
+
+/* #logos {
+    height: 40px;
+    width: 40px;
+    font-size: 18px;
+} */
+
+/* .changes {
+    margin-top: 20px;
+} */
+
+.changes div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.changes div:hover {
+    background-color: #e0e0e0;
+}
+
+i {
+    font-size: 20px;
+}
+#old_password{
+    /* border: 1px solid red; */
+
+    border: 1px solid rgb(98, 96, 96);
+    border-radius: 10px ;
+    height: 40px;
+    width: 250px;
+    padding-left: 20px;
+}
+#New_password{
+    /* border: 1px solid red; */
+
+    border: 1px solid rgb(98, 96, 96);
+    border-radius: 10px ;
+    height: 40px;
+    width: 250px;
+    padding-left: 20px;
+    
+
+
+}
+
+#Confirm_New_password{
+    /* border: 1px solid red; */
+
+    border: 1px solid rgb(98, 96, 96);
+    border-radius: 10px ;
+    height: 40px;
+    width: 250px;
+    padding-left: 20px;
+}
+
+#register{
+    /* border: 1px solid red; */
+    background-color: #55d6aa;
+    border: 1px solid rgb(98, 96, 96);
+    border-radius: 10px ;
+    height: 40px;
+    width: 270px;
+    padding-left: 20px;
+    
+margin-top: 30px;
+cursor: pointer;
+transition-duration: 1s;
+}
+#register:hover{
+   color:black;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="logo">
+            <button id="logos"><i class="fa-solid fa-user"></i></button>
+             <h2 id="usernames">Shree Ram</h2>
+        </div>
+        <hr>
+        <div class="changes">
+          
+               <p for="Edit Profile">Old Password</p>
+               <input type="password" id="old_password">
+       
+           
+            <p for="Edit Profile">New Password</p>
+            <input type="password" id="New_password">
+
+            <p for="Edit Profile">Confirm New Password</p>
+            <input type="password" id="Confirm_New_password">
+
+          
+                <button id="register" type="submit" onclick="btn()">Changed Password</button>
+          
+        </div>
+          
+    </div>
+</body>
+<script src="admin_change_password.js"></script>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">    <link rel="stylesheet" href="expense_tracker.css">
+</head>
+<body>
+       <header>
+        <div class="container1">
+            <h2 id="heading">Expense Tracker</h2>
+       <nav>
+        <ul>
+                 <!-- <a href="button.html" class="btns">Goto Home Page</a> -->
+                <li><a href="filter.html"class="btns">Dashboard</a></li>
+                <li><a href="expense_tracker.html"class="btns1">Expense Name Master</a></li>
+                <li><a href="first_page.html"class="btns">Add Expense</a></li>
+                <!-- <li><a href="login.html" class="btns">Login</a></li>  -->
+               <button id="logos"><i class="fa-solid fa-user"></i>
+
+        </ul>
+       </nav>
+        </div>
+    </header>
+    <main>
+        
+        <section id="expense-form">
+          
+            <form>
+                <p id="x" for="expense-name">Select Expense</p>
+                <!-- <input type="text" id="expense-name" name="expense-name" required> -->
+                <select id="expense-name" name="expense-name"  required>
+                    <option value="" disabled selected>Choose an expense</option>
+                </select>
+
+                <p id="y" for="expense-amount">Quantity</p>
+                <input type="number" id="expense-quantity" name="expense-amount" required>
+
+                
+                <p id="z" for="expense-amount">Rate</p>
+                <input type="number" id="expense-rate"  name="expense-amount" required>
+
+                <!-- <p for="expense-amount">Amount:</p>
+                <input type="number" id="expense-amount" name="expense-amount" required> -->
+                
+                <p id="a" for="expense-date">Date</p>
+                <input type="date" id="expense-date" name="expense-date" required>
+                <button id="save-btn">Save Expense</button>
+                <button type="submit" id="btn" onclick="calculation()">Add Expense</button>
+            </form>
+        </section>
+        
+
+
+
+        <div class="container2">
+            <div class="logo">
+                <button id="logos1"><i class="fa-solid fa-user"></i></button>
+                 <h2 id="usernames">Shree Ram</h2>
+            </div>
+            <hr>
+            <div class="changes">
+               <div class="a">
+              <a href="admin_edit.html" id="editProfileLink" ><i class="fa-regular fa-pen-to-square"></i> <label for="Edit Profile">Edit Profile</label></a>
+               
+               </div>
+              <div class="b">
+                <a href="admin_change_pass.html" id="changeprofilepassword"><i class="fa-solid fa-key"></i><label for="Edit Profile">Change Password</label></a>
+                
+              </div>
+               <div class="c">
+                <a href="login.html" id="user-logout"> <i class="fa-solid fa-right-from-bracket"></i> <label for="Edit Profile">Logout</label></a>
+               
+               </div>
+            </div>
+        </div>
+
+
+
+
+
+            <div class="container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sr. No.</th>
+                            <th>Category</th>
+                            <th>Quantity</th>
+                            <th>Rate</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th>Action</th>
+                            <!-- <th>Edit</th> -->
+                            <!-- <th>Delete-Icon</th> -->
+                        </tr>
+                    </thead>
+                    <tbody id="tablebody">
+                        <!-- Data will be dynamically inserted here -->
+                    </tbody>
+                </table>
+            </div>
+        
+            <h2 id="total-amount">total Expense:00</h2>
+
+            
+    </main> 
+    <script src="expense_tracker.js"></script>
+</body>
+</html>

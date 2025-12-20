@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #expense-form form{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+}
+
+#expense-quantity{
+    padding-left: 10px; /* Andar ka text 10px right hoga */
+    height: 40px;
+    width: 200px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    /* margin-right: 500px; */
+}
+#expense-rate{
+    padding-left: 10px; /* Andar ka text 10px right hoga */
+    height: 40px;
+    width: 200px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    /* margin-right: 500px; */
+}
+
+#expense-name{
+    padding-left: 10px; /* Andar ka text 10px right hoga */
+    height: 45px;
+    width: 200px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    /* margin-top: 10px; */
+    /* margin-right: 500px; */
+}
+
+#expense-amount{
+    padding-left: 10px; /* Andar ka text 10px right hoga */
+    height: 40px;
+    width: 200px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    /* margin-right: 500px; */
+}
+
+#expense-date{
+    padding-left: 10px; /* Andar ka text 10px right hoga */
+    height: 40px;
+    width: 200px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    /* margin-right: 500px; */
+}
+
+#btn{
+    padding-left: 10px; /* Andar ka text 10px right hoga */
+    height: 40px;
+    width: 100px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: 1s;
+    /* margin-right: 500px; */
+}
+#btn:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+
+    </style>
+</head>
+<body>
+    <section id="expense-form1">
+          
+        <form>
+            <label for="expense-name">Select Expense:</label>
+            <!-- <input type="text" id="expense-name" name="expense-name" required> -->
+            <select id="expense-name" name="expense-name"  required>
+                <option value="" disabled selected>Choose an expense</option>
+            </select>
+
+            <label for="expense-amount">Quantity:</label>
+            <input type="number" id="expense-quantity" name="expense-amount" required>
+
+            
+            <label for="expense-amount">Rate:</label>
+            <input type="number" id="expense-rate" name="expense-amount" required>
+
+            <!-- <label for="expense-amount">Amount:</label>
+            <input type="number" id="expense-amount" name="expense-amount" required> -->
+            
+            <label for="expense-date">Date:</label>
+            <input type="date" id="expense-date" name="expense-date" required>
+            
+            <button type="submit" id="btn" onclick="calculation()">update</button>
+        </form>
+    </section>
+</body>
+<script src="edits.js"></script>
+</html>
