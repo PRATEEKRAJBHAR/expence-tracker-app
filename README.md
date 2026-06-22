@@ -25,5 +25,5 @@ This app allows users to track their daily expenses, manage records, and persist
 
 ## live url
 
-- expence-tracker-app-seven.vercel.app
+- https://expence-tracker-app-seven.vercel.app/
 
